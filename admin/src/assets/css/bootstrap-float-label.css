@@ -1,0 +1,72 @@
+.has-float-label {
+  display: block;
+  position: relative; }
+  .has-float-label label, .has-float-label > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    font-size: 12px;
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    top: 0.8em;
+    left: 10px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 1;
+    padding: 0 1px; }
+    .has-float-label label::after, .has-float-label > span::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      height: 2px;
+      top: 50%;
+      left: -.2em;
+      right: -.2em;
+      z-index: -1; }
+  .has-float-label .form-control::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: all .2s;
+            transition: all .2s; }
+  .has-float-label .form-control::-moz-placeholder {
+    opacity: 1;
+    transition: all .2s; }
+  .has-float-label .form-control:-ms-input-placeholder {
+    opacity: 1;
+    transition: all .2s; }
+  .has-float-label .form-control::placeholder {
+    opacity: 1;
+    -webkit-transition: all .2s;
+            transition: all .2s; }
+  .has-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+    opacity: 0; }
+  .has-float-label .form-control:placeholder-shown:not(:focus)::-moz-placeholder {
+    opacity: 0; }
+  .has-float-label .form-control:placeholder-shown:not(:focus):-ms-input-placeholder {
+    opacity: 0; }
+  .has-float-label .form-control:placeholder-shown:not(:focus)::placeholder {
+    opacity: 0; }
+  .has-float-label .form-control:placeholder-shown:not(:focus) + * {
+    font-size: 14px;
+    opacity: .5;
+    top: 1.4em;
+    color: #000;
+    font-weight: normal; }
+
+.input-group .has-float-label {
+  display: table-cell; }
+  .input-group .has-float-label .form-control {
+    border-radius: 4px; }
+  .input-group .has-float-label:not(:last-child) .form-control {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+  .input-group .has-float-label:not(:first-child) .form-control {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -1px; }
+    .form-control{
+      color: rgba(0, 0, 0, 0.87);
+      padding: 22px 10px 7px 10px;
+      font-weight: 600;
+    }
